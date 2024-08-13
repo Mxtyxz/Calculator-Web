@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #A263DA, #02394a, #EB4B98);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.calculator {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba( 35, 35, 35, 0.1);
+    color: #fff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba( 0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+#display {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background:  #2B4790;
+    border: 1px solid rgba( 255, 255, 255, .40);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(197, 127, 127, .4);
+    color: #fff;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #2B4790;
+    border: 1px solid rgba( 255, 255, 255, .40);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(197, 127, 127, .4);
+    color: #fff;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.button:last-child {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba( 255, 255, 255, .40);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(197, 127, 127, .4);
+    color: #fff;
+    background: #7A5ECB;
+}
+
+.button:last-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.button:hover {
+    background-color: inherit;
+}
+
+.button:active {
+    background-color: rgba(122, 94, 203, .5);
+}
+
+.button:last-child:active {
+    background-color: rgba(43, 71, 144, .3);
+}
+
+.double {
+    flex-basis: 47%;
+}
